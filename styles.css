@@ -1,0 +1,66 @@
+/* =========================================================
+   FIXORA — SISTEMA DE DISEÑO "ORDEN DE SERVICIO / BLUEPRINT"
+   ========================================================= */
+
+/* Cuadrícula de plano técnico */
+.blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 96px 96px, 96px 96px, 24px 24px, 24px 24px;
+}
+
+/* Cinta de precaución cruzada (Amarillo seguridad + Azul marino) */
+.hazard-tape {
+  background: repeating-linear-gradient(
+    -45deg,
+    #FACC15,
+    #FACC15 18px,
+    #0F172A 18px,
+    #0F172A 36px
+  );
+}
+
+/* Sellos industriales inclinados */
+.stamp {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border: 2.5px solid #0F172A;
+  transform: rotate(-3deg);
+  box-shadow: 2px 2px 0px #0F172A;
+  line-height: 1.1;
+}
+
+.stamp-yellow {
+  background-color: #FACC15;
+  color: #0F172A;
+}
+
+.stamp-blue {
+  background-color: #1D4ED8;
+  color: #FFFFFF;
+}
+
+.stamp-green {
+  background-color: #10B981;
+  color: #0F172A;
+}
+
+.stamp-red {
+  background-color: #EF4444;
+  color: #FFFFFF;
+}
+
+/* Botón de navegación activo */
+.nav-btn.active {
+  background-color: #FACC15;
+  color: #0F172A;
+  border-color: #0F172A;
+}
